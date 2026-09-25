@@ -1,10 +1,94 @@
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; color: #222; }
-.header, .footer { padding: 24px 6vw; background: #ececec; }
-.header { display: flex; justify-content: space-between; align-items: center; }
-.menu { display: flex; gap: 18px; }
-.main { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; padding: 40px 6vw; }
-.intro { grid-column: 1 / -1; }
-.content { display: grid; gap: 24px; }
-.post, .sidebar { padding: 24px; border: 1px solid #bbb; }
-a { color: inherit; }
+/* Базовый шрифт и отступы по краям страницы */
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Списки навигации и историй делаем в виде обычного текста */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Ссылки и кнопки в виде ссылок */
+a {
+  color: #0044cc;
+}
+
+/* Шапка сайта */
+.header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.header__menu li {
+  display: inline;
+  margin-right: 15px;
+}
+
+/* Разделы и заголовки */
+section, aside, footer {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Скрываем графику и декоративные элементы (круг и цифры) */
+.hero__illustration, .post__date {
+  display: none;
+}
+
+/* Списку историй добавляем небольшие отступы */
+.stories__list li {
+  margin-bottom: 20px;
+}
+
+.post__title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+/* Время в маршрутах */
+.route__time {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Таблица фактов */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Подвал */
+.footer {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  color: #666;
+}
+
+.footer__logo {
+  font-weight: bold;
+}

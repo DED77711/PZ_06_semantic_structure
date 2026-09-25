@@ -3,42 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Городской журнал</title>
+  <title>City Stories</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div class="header">
-    <div class="logo">CITY</div>
-    <div class="menu">
-      <a href="#news">Новости</a>
-      <a href="#places">Места</a>
-      <a href="#contacts">Контакты</a>
-    </div>
-  </div>
-
-  <div class="main">
-    <div class="intro">
-      <h1>Городской журнал</h1>
-      <p>Короткие заметки о событиях, людях и интересных местах.</p>
-    </div>
-
-    <div class="content" id="news">
-      <div class="post">
-        <h2>Открылась новая выставка</h2>
-        <p>В городском центре современного искусства открылась выставка молодых авторов.</p>
+  <header class="header">
+    <a class="header__logo" href="#">CITY STORIES</a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#stories">Истории</a>
+        </li>
+        <li>
+          <a class="header__link" href="#route">Маршруты</a>
+        </li>
+        <li>
+          <a class="header__link" href="#facts">Факты</a>
+        </li>
+        <li>
+          <a class="header__link" href="#about">О проекте</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header__button" href="#stories">
+      Исследовать
+    </a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Город говорит.<br>
+          Нужно только услышать.
+        </h1>
+        <p class="hero__text">
+          Короткие истории, неожиданные места и маршруты,
+          которые помогают увидеть знакомый город по-новому.
+        </p>
+        <a class="hero__button" href="#stories">
+          Смотреть истории
+        </a>
       </div>
-      <div class="post" id="places">
-        <h2>Три места для прогулки</h2>
-        <p>Набережная, старый парк и пешеходная улица подходят для короткого маршрута выходного дня.</p>
+      <div class="hero__illustration">
+        <span class="hero__number">01</span>
+        <div class="hero__circle">
+          <p class="hero__circle-text">
+            СМОТРИ<br>
+            ВНИМАТЕЛЬНЕЕ
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div class="sidebar">
-      <h2>Полезное</h2>
-      <p>Афиша недели</p>
-    </div>
-  </div>
-
-  <div class="footer" id="contacts">© 2026 Городской журнал</div>
+    </section>
+    <section class="stories" id="stories">
+      <h2 class="section-title">Истории</h2>
+      <p class="section-text">
+        Небольшие рассказы о местах, мимо которых мы проходим каждый день
+        и почти не замечаем.
+      </p>
+      <ul class="stories__list">
+        <li>
+          <article class="post">
+            <h3 class="post__title">Старый двор с аркой</h3>
+            <p class="post__date">
+              <time datetime="2026-09-12">12 сентября 2026</time>
+            </p>
+            <p class="post__text">
+              Во дворе сохранилась кирпичная арка, которой больше ста лет.
+              Раньше через неё проезжали телеги.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="post">
+            <h3 class="post__title">Кафе на крыше</h3>
+            <p class="post__text">
+              На крыше бывшего завода открыли кафе, откуда видно
+              почти весь центр города.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="post">
+            <h3 class="post__title">Граффити у вокзала</h3>
+            <p class="post__text">
+              Местные художники расписали стену у вокзала
+              историями жителей района.
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="route" id="route">
+      <h2 class="section-title">Маршрут выходного дня</h2>
+      <ol class="route__list">
+        <li class="route__item">
+          <span class="route__time">10:00</span>
+          Центральная площадь
+        </li>
+        <li class="route__item">
+          <span class="route__time">11:30</span>
+          Старый двор с аркой
+        </li>
+        <li class="route__item">
+          <span class="route__time">13:00</span>
+          Кафе на крыше
+        </li>
+        <li class="route__item">
+          <span class="route__time">15:00</span>
+          Набережная
+        </li>
+      </ol>
+    </section>
+    <section class="facts" id="facts">
+      <h2 class="section-title">Город в цифрах</h2>
+      <table class="facts__table">
+        <tr>
+          <th>Показатель</th>
+          <th>Значение</th>
+        </tr>
+        <tr>
+          <td>Возраст города</td>
+          <td>850 лет</td>
+        </tr>
+        <tr>
+          <td>Парков и скверов</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Мостов</td>
+          <td>14</td>
+        </tr>
+      </table>
+    </section>
+    <aside class="tips">
+      <h2 class="section-title">Полезно знать</h2>
+      <p class="section-text">
+        Возьмите с собой удобную обувь и воду. Маршрут занимает
+        около пяти часов вместе с остановками.
+      </p>
+    </aside>
+    <section class="cta">
+      <h2 class="cta__title">Знаете интересное место?</h2>
+      <p class="cta__text">Расскажите нам, и мы добавим его в новые истории.</p>
+      <a class="hero__button" href="#about">Написать нам</a>
+    </section>
+  </main>
+  <footer class="footer" id="about">
+    <p class="footer__logo">CITY STORIES</p>
+    <p class="footer__text">
+      Проект о городе и его историях. Учебная работа, 2026.
+    </p>
+  </footer>
 </body>
 </html>
